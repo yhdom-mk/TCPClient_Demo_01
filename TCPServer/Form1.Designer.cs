@@ -1,4 +1,4 @@
-﻿namespace TCPClient_Demo_01
+﻿namespace TCPServer
 {
     partial class Form1
     {
@@ -34,7 +34,7 @@
             this.txtInfo = new System.Windows.Forms.TextBox();
             this.txtMessage = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnstart = new System.Windows.Forms.Button();
+            this.btnStart = new System.Windows.Forms.Button();
             this.listClientIP = new System.Windows.Forms.ListBox();
             this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -64,7 +64,7 @@
             this.btnSend.TabIndex = 2;
             this.btnSend.Text = "Send";
             this.btnSend.UseVisualStyleBackColor = true;
-            this.btnSend.Click += new System.EventHandler(this.button1_Click);
+            this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
             // 
             // txtInfo
             // 
@@ -92,15 +92,15 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Message :";
             // 
-            // btnstart
+            // btnStart
             // 
-            this.btnstart.Location = new System.Drawing.Point(539, 441);
-            this.btnstart.Name = "btnstart";
-            this.btnstart.Size = new System.Drawing.Size(75, 23);
-            this.btnstart.TabIndex = 6;
-            this.btnstart.Text = "Start";
-            this.btnstart.UseVisualStyleBackColor = true;
-            this.btnstart.Click += new System.EventHandler(this.btnstart_Click);
+            this.btnStart.Location = new System.Drawing.Point(539, 441);
+            this.btnStart.Name = "btnStart";
+            this.btnStart.Size = new System.Drawing.Size(75, 23);
+            this.btnStart.TabIndex = 6;
+            this.btnStart.Text = "Start";
+            this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // listClientIP
             // 
@@ -119,7 +119,6 @@
             this.label3.Size = new System.Drawing.Size(56, 15);
             this.label3.TabIndex = 8;
             this.label3.Text = "Client IP :";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // Form1
             // 
@@ -128,7 +127,7 @@
             this.ClientSize = new System.Drawing.Size(911, 513);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.listClientIP);
-            this.Controls.Add(this.btnstart);
+            this.Controls.Add(this.btnStart);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtMessage);
             this.Controls.Add(this.txtInfo);
@@ -153,7 +152,7 @@
         private TextBox txtInfo;
         private TextBox txtMessage;
         private Label label2;
-        private Button btnstart;
+        private Button btnStart;
         private ListBox listClientIP;
         private Label label3;
     }
