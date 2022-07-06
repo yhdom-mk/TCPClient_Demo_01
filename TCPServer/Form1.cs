@@ -16,5 +16,15 @@ namespace TCPClient_Demo_01
         {
 
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnstart_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
